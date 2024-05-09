@@ -17,7 +17,7 @@ on:
 jobs:
   build:
     
-    runs-on: windows-latest
+    runs-on: self-hosted
    
     steps:
     - uses: actions/checkout@v4
@@ -32,8 +32,8 @@ jobs:
         pwd
         echo $GITHUB_WORKSPACE
         mvn -B package --file pom.xml
-        mkdir -p C:\artifacts
-        cp D:\a\JavaHarsh\JavaHarsh\target\mvn-example-1.0-SNAPSHOT.jar C:\artifacts\
+        #mkdir -p C:\artifacts
+        #cp D:\a\JavaHarsh\JavaHarsh\target\mvn-example-1.0-SNAPSHOT.jar C:\artifacts\
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
