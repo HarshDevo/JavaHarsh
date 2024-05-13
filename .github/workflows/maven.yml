@@ -14,9 +14,16 @@ on:
   pull_request:
     branches: [ "main" ]
 
+  workflow_dispatch: 
+    inputs:
+      username:
+        description: "enter your name"
+        default: "harsh"
+        type: "string"
+
 jobs:
   build:
-    if: env(MY_VAR) == 'yes'
+  
     runs-on: [ubuntu-latest]
    
     steps:
