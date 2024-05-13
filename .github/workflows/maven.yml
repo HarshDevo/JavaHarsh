@@ -16,8 +16,8 @@ on:
 
 jobs:
   build:
-    
-    runs-on: [self-hosted]
+    if: env(MY_VAR) == 'yes'
+    runs-on: [ubuntu-latest]
    
     steps:
     - uses: actions/checkout@v4
