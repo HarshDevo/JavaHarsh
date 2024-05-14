@@ -26,7 +26,7 @@ jobs:
   
     runs-on: [ubuntu-latest]
     environment: 
-      MY_VAR
+      MY_VAR  
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
@@ -35,6 +35,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+        my_name: $NAME
     - name: Build with Maven
       run: |
         pwd
