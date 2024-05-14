@@ -25,7 +25,8 @@ jobs:
   build:
   
     runs-on: [ubuntu-latest]
-   
+    environment: 
+      MY_VAR
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
