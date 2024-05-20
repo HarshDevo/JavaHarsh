@@ -51,6 +51,6 @@ jobs:
         path: C:\target\*.jar
 
     - name: Running batch
-      run: ./C:/sample_batch/mig.bat
+      run: C:\sample_batch\mig.bat
 
    
