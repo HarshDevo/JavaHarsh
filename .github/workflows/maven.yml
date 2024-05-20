@@ -50,4 +50,7 @@ jobs:
         name: packaged-application
         path: C:\target\*.jar
 
+    - name: Running batch
+      run: ./C:/sample_batch/mig.bat
+
    
